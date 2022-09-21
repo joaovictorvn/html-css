@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Sim, mais um formulário</h1>
+    <form action="cadastro.js" method="post">
+        <!--METODOS GET TEM LIMITE DE BITES ENTÃO EM CASO DE CAIXA DE TEXTO OU FILE COLOQUE METODO POST QUE É MELHOR-->
+        <p>
+            <label for="est">Estado:</label>
+            <!--"Select" é uma tag para criar listas de opções, para criar os itens use a tag "options"-->
+            <select name="est" id="est">
+                <optgroup label="top 10 Regiões fodas">
+                    <option value="df">Distrito Federal</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <!--Essa opção é bem parecida com o select, porém tem a vantagem de poder acrescentar nomes dentro das opções coisa que o select não permite-->
+            <!--Para o datalist funcionar crie uma label e input text normal, depois crie a datalist com um ID e depois acrescente esse id no input text com o comando "list" -->
+            <label for="prof">Profissões</label>
+            <input type="text" name="prof" id="prof" list="listprof">
+            <datalist id="listprof">
+                <option>Professor</option>
+                <option>Mecânico</option>
+                <option>Engenheiro</option>
+                <option>DEV</option>
+                <option>Cozinheiro</option>
+            </datalist>
+        <p>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10">Digite algo</textarea>
+        </p>
+        </p>
+        <!--CUIDADO PRA NÃO COLOCAR OS BOTÕES FORA DO FORM PQ SE NÃO ELES NÃO FUNCIONAM-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

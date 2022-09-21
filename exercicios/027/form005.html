@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Mais um formulário</h1>
+    <form action="cadastro.js" autocomplete="off" method="get">
+        <fieldset>
+            <legend>Checkboxes de seus Livros favoritos</legend>
+            
+            <input type="checkbox" name="sa" id="sa" checked>
+            <label for="sa">Stormlight Archive</label>
+            
+            <input type="checkbox" name="mistborn" id="mistborn">
+            <label for="mistborn">Mistborn</label>
+            
+            <input type="checkbox" name="lotr" id="lotr">
+            <label for="lotr">Senhor dos Áneis</label>
+            
+            <input type="checkbox" name="wot" id="wot">
+            <label for="wot">Roda do Tempo</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--Para as caixas radio não ficarem bugadas ou clicando ao mesmo tempo basta colocar o mesmo "name" para todas-->
+            <input type="radio" name="sexo" id="sexom" checked> <label for="sexom">Masculino</label><br>
+            <input type="radio" name="sexo" id="sexof"> <label for="sexof">Feminino</label><br>
+            <input type="radio" name="sexo" id="sexon"> <label for="sexon">Nenhum</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
